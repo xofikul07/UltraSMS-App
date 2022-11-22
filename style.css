@@ -20,7 +20,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff0000;
+  background: none;
 }
 
 * {
@@ -62,8 +62,14 @@ main .mainCard .header {
 main .mainCard .header .logo {
   width: 15rem;
   height: 15rem;
-  border-radius: 50%;
-  background: #ff0000;
+  border-radius: 80%;
+  
+  background: none;
+  
+  padding-top:14px;
+  padding-bottom:14px;
+  
+  
   box-shadow: 20px 20px 60px #ffffff, -20px -20px 60px #ffffff;
   display: grid;
   place-items: center;
@@ -73,7 +79,7 @@ main .mainCard .header .logo {
 main .mainCard .header .logo img {
   border-radius: 100%;
   background-size: 100% 1000%;
-  width: 14rem;
+  width: 15rem;
   height: 14rem;
   transform: perspective(1000px);
   transform: translateZ(20px);
@@ -168,7 +174,7 @@ main .mainCard .header .buttons a:hover {
 
 @media screen and (max-width: 520px) {
   main .mainCard {
-    width: 35rem;
+   max width: 35rem;
     height: 55rem;
   }
   main .mainCard .header .logo {
@@ -176,7 +182,7 @@ main .mainCard .header .buttons a:hover {
     height: 14rem;
   }
   main .mainCard .header .logo img {
-    width: 11rem;
+   max width: 11rem;
     height: 11rem;
   }
   main .mainCard .header .name {
@@ -208,12 +214,12 @@ main .mainCard .header .buttons a:hover {
     width: 32rem;
   }
   main .mainCard .header .logo {
-    width: 13rem;
-    height: 13rem;
-  }
+    width: 15rem;
+    height: 15rem;
+    }
   main .mainCard .header .logo img {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
   }
   main .mainCard .header .name {
     font-size: 1.6rem;
@@ -450,7 +456,7 @@ html.loaded .home-content__main {
 }
 
 #footer .social-links a:hover {
-  background: #e03a3c;
+  background: #ffffff;
   color: #fff;
   text-decoration: none;
 }
